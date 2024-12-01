@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import axios from 'axios'
+import Navbar from './components/Navbar/Navbar'
+
 
 
 
@@ -25,7 +27,8 @@ function App() {
     fetchApi();
   }, [API])
   return (
-    <>
+    <div className="App">
+      <Navbar />
       <ul>
         {
           array.map((user, index) => (
@@ -33,7 +36,7 @@ function App() {
           ))
         }
       </ul>
-    </>
+    </div>
   )
 }
 
