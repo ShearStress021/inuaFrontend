@@ -1,8 +1,7 @@
-import "./Navbar.css"
-import { useEffect, useState } from "react"
-import { getImageUrl } from "../../utils"
-import menuIcon from "../../assets/Navbar/menuIcon.svg"
+import { useState } from "react"
 import closeIcon from "../../assets/Navbar/closeIcone.svg"
+import menuIcon from "../../assets/Navbar/menuIcon.svg"
+import "./Navbar.css"
 
 const Navbar = () => {
 
@@ -10,10 +9,11 @@ const Navbar = () => {
     return (
         <>
             <header>
-                <div className="title">
+                <a className="title">
                     <h1><small className="first-letter">i</small>nua<span><br />collective society</span> </h1>
-                </div>
-                <ul class="navlist">
+                </a>
+
+                <ul className={`navlist ${menuOpen ? 'menuOpen' : ""}`}>
                     <li><a href="" className="active">Home</a></li>
                     <li><a href="">Programs</a></li>
                     <li><a href="#">About Us</a></li>
@@ -21,7 +21,8 @@ const Navbar = () => {
                     <li><a href="">Events</a></li>
                     <li><a href="">Gallery</a></li>
                 </ul>
-                <img className="menuIcon" src={menuOpen ? menuIcon : closeIcon} alt="" onClick={() => setMenuOpen(!menuOpen)} />
+                <img className="menuIcon" src={menuOpen ? closeIcon : menuIcon} alt="" onClick={() => setMenuOpen(!menuOpen)} />
+
 
             </header>
         </>
