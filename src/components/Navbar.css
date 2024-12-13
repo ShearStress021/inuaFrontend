@@ -1,0 +1,152 @@
+/* @import "../../var.css"; */
+
+header {
+    display: flex;
+    /* background-color: ; */
+    align-items: center;
+    justify-content: space-between;
+    background-color: #96c5e4;
+    /* padding: 2% 9%; */
+    padding: 30px 12%;
+    top: 0;
+    right: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 10001;
+
+}
+
+header .title {
+    text-align: center;
+
+}
+
+header h1 {
+    font-family: "Bokor", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3.9rem;
+    margin: 2% 0;
+    line-height: 10px;
+
+}
+
+header .first-letter {
+    font-family: "Dancing Script", cursive;
+    color: rgb(121, 150, 123);
+    font-weight: 700;
+    font-size: 3.2rem;
+
+}
+
+header span {
+    font-family: "Yuji Mai", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+}
+header.sticky {
+    /* background-color: rgb(231, 176, 74); */
+    background-color: #e2e2e2;
+    padding: 14px 12%;
+    box-shadow: 0px 4px 15px rgb(0 0 0/ 8%);
+    transition: all .42s;
+}
+
+.navlist {
+    display: flex;
+    align-items: center;
+    gap: 2.0rem;
+    color: var(--text);
+    font-size: 1.2rem;
+    width: 60%;
+}
+
+.navlist a:hover {
+    color:aqua ;
+}
+
+.navlist .active {
+    color: #dfffd7;
+}
+
+.menuIcon {
+    font-size: 2rem;
+    color: #212121;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+/* Responsiveness */
+@media (max-width: 1165px) {
+    .navlist {
+        gap: 1.0rem;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .navlist {
+        gap: 0.6rem;
+    }
+}
+
+@media screen and (max-width:940px) {
+    .menuIcon {
+        display: block;
+        cursor: pointer;
+    }
+
+    header {
+        position: relative;
+    }
+
+    .navlist {
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        right: 0;
+        top: 100%;
+        align-items: center;
+        width: 250px;
+        gap: 1.5rem;
+        border-radius: 10px;
+        background: #966416;
+        background: linear-gradient(0deg,
+                #e2cba6 0%,
+                #e2b468 100%);
+        padding: 24px 33px;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+        transition: opacity 1s ease-in-out;
+        animation: slideIn 1.5s ease-in-out forwards;
+    }
+
+    .navlist a {
+        font-size: 1.2rem;
+        color: #000;
+        display: block;
+        margin: 2px 0;
+    }
+
+    .navlist a:hover {
+        transform: translateX(-5px);
+        transition: .3s;
+    }
+
+    .menuOpen {
+        display: flex;
+        z-index: 1;
+    }
+
+
+}
+
+/* responsiveness */
+@media screen and (max-width: 940px){
+    #menu-icon {
+        display: block;
+
+    }
+
+}
