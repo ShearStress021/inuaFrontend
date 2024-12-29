@@ -1,0 +1,255 @@
+footer {
+    width: 100%;
+    /* bottom: 0; */
+    /* position: absolute; */
+    background: linear-gradient(to right, #96c5e4, #b5d7ed);
+    color: #000;
+    padding: 0 0 30px;
+    font-size: 0.8rem;
+    line-height: 20px;
+}
+
+.footerSection {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col:nth-child(2),
+.col:nth-child(3) {
+    flex-basis: 15%;
+}
+
+.col .title {
+
+    width: 80px;
+
+
+}
+
+.col h1 {
+    font-family: "Bokor", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3.9rem;
+    margin-bottom: 30px;
+    line-height: 10px;
+
+}
+
+.col .first-letter {
+    font-family: "Dancing Script", cursive;
+    color: rgb(121, 150, 123);
+    font-weight: 700;
+    font-size: 3.2rem;
+
+}
+
+.col span {
+    font-family: "Yuji Mai", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+}
+
+.col h3 {
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.email-id {
+    width: fit-content;
+    border: 1px solid #ccc;
+}
+
+ul li {
+
+    margin-bottom: 12px;
+    color: #000;
+}
+
+form {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+form .bxs-envelope {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+form input {
+    width: 100%;
+    background: transparent;
+    color: #000;
+    border: 0;
+    outline: none;
+}
+
+form button {
+    border: 0;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+form button .bxs-right-arrow-alt {
+    font-size: 16px;
+    color: #000;
+}
+
+.socials .bx {
+    height: 40px;
+    width: 40px;
+    /* color: yellow; */
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+hr {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #3d3d3d;
+    margin: 20px auto;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 1rem;
+    /* width: 100%;
+    background: #3d3d3d;
+    padding: 30px 40px; */
+}
+
+.underline {
+    width: 100%;
+    height: 5px;
+    background: #96c5e4;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+}
+
+@media(max-width:700px) {
+    footer {
+        bottom: unset;
+    }
+
+    .col {
+        flex-basis: 100%;
+    }
+
+    .col:nth-child(2),
+    .col:nth-child(3) {
+        flex-basis: 100%;
+    }
+}
+
+/* 
+.footer-wrapper {
+    margin: 6rem 0rem;
+    display: flex;
+    margin-top: 10rem;
+}
+
+.footer-logo-container {
+    max-width: 110px;
+}
+
+.footer-icons {
+    margin-top: 2.5rem;
+}
+
+.footer-icons svg {
+    font-size: 1.5rem;
+    margin-right: 1.25rem;
+    color: #585858;
+}
+
+/* .footer-section-one {
+    border: 2px solid blue;
+  } */
+/* .footer-section-two {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-section-columns {
+    display: flex;
+    flex-direction: column;
+    min-width: 190px;
+}
+
+.footer-section-columns span {
+    margin: 0.25rem 0rem;
+    font-weight: 600;
+    color: #4c4c4c;
+    cursor: pointer;
+}
+
+.footerSection {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.titleFooter {
+    width: 40%;
+    gap: 40px;
+
+}
+
+.socialLinks {
+    display: flex;
+    gap: 10px;
+}
+
+h1 {
+    font-family: "Bokor", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 5.3rem;
+    margin: 2% 0;
+    line-height: 10px;
+}
+
+.first-letter {
+    font-family: "Dancing Script", cursive;
+    color: rgb(121, 150, 123);
+    font-weight: 700;
+    font-size: 3.2rem;
+
+}
+
+span {
+    font-family: "Yuji Mai", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.quickLinks {
+    width: 30%;
+    margin: auto;
+} */

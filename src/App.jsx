@@ -2,6 +2,7 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
+import Footer from './components/Footer'
 import About from './pages/About'
 import Home from './pages/Home'
 import Programs from './pages/Programs'
@@ -24,19 +25,20 @@ function App() {
   }, [])
 
   return (
-    <>  
-    <Routes>
-      <Route path="/" element={<Home/> } />
-      <Route path="/programs" element={<Programs/> } />
-      <Route path="/about_us" element={<About/> } />
-    </Routes>
-   
-      {
-        
-        array.map((name, index) => 
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/programs" element={<Programs />} />
+        <Route path="/about_us" element={<About />} />
+      </Routes>
+
+      {/* {
+
+        array.map((name, index) =>
           <li key={index}>{name}</li>
         )
-      }
+      } */}
+      <Footer />
 
     </>
   )

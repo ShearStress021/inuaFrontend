@@ -6,44 +6,45 @@ import "./Home.css"
 const Home = () => {
     return (
         <>
-        <Navbar />
-         <section className="hero">
-            <div className="hero-text">
-            <h2>INUA COLLECTIVE SOCIETY</h2>
-            <p>is a non-profit organization with
-                operations in the BC Lower mainland. INUA is a Swahili word which
-                translates to elevate or uplift. INUA Collective society strives to
-                elevate and up-skill the welfare of BIPOC and other racialized
-                communities in BC lower mainland.</p>
-            <Link className="hero-btn" href="#">Learn More</Link>
-            </div>
-            <div className="hero-img">
-                <img src={hero} alt="hero"/>
-            </div>
-   
-        </section>
-        <section className="program">
-            <div className="main-program">
-                <div className="program-img">
-                  
-                    <img className="prog2" src={program}/>
+            <Navbar />
+            <section className="hero">
+                <div className="hero-text">
+                    <h2>INUA COLLECTIVE SOCIETY</h2>
+                    <p>is a non-profit organization with
+                        operations in the BC Lower mainland. INUA is a Swahili word which
+                        translates to elevate or uplift. INUA Collective society strives to
+                        elevate and up-skill the welfare of BIPOC and other racialized
+                        communities in BC lower mainland.</p>
+                    <Link className="hero-btn" href="#">Learn More</Link>
                 </div>
-                <div className="program-text">
+                <div className="hero-img">
+                    <img src={hero} alt="hero" />
+                </div>
+
+            </section>
+            <section className="program">
+                <div className="main-program">
                     <h4>Our Programs</h4>
-                    <h1>Youth mentership and School Tours</h1>
-                    <p>The Youth Mentorship Program is a great way for young people to
-                        get involved in the community and learn from more experienced
-                        people. It can help them develop skills and relationships that will
-                        be valuable in their lives. By working together, young people can
-                        create an impact and have a positive impact on the world.
-                        Developing and sharing ideas with other youth members of the
-                        community can help them to learn and grow</p>
-                    <Link href="#" className="program-btn">More Programs</Link>
+                    <div className="program-img">
+
+                        <img className="prog2" src={program} />
+                    </div>
+                    <div className="program-text">
+
+                        <h2>Youth mentership and School Tours</h2>
+                        <p>The Youth Mentorship Program is a great way for young people to
+                            get involved in the community and learn from more experienced
+                            people. It can help them develop skills and relationships that will
+                            be valuable in their lives. By working together, young people can
+                            create an impact and have a positive impact on the world.
+                            Developing and sharing ideas with other youth members of the
+                            community can help them to learn and grow</p>
+                        <Link href="#" className="program-btn">More Programs</Link>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
         </>
-       
+
     )
 }
 export default Home
