@@ -15,7 +15,7 @@ const Home = () => {
                         translates to elevate or uplift. INUA Collective society strives to
                         elevate and up-skill the welfare of BIPOC and other racialized
                         communities in BC lower mainland.</p>
-                    <Link className="hero-btn" href="#">Learn More</Link>
+                    <Link to="/about_us" className="hero-btn" href="#">Learn More</Link>
                 </div>
                 <div className="hero-img">
                     <img src={hero} alt="hero" />
@@ -40,7 +40,7 @@ const Home = () => {
                             create an impact and have a positive impact on the world.
                             Developing and sharing ideas with other youth members of the
                             community can help them to learn and grow</p>
-                        <Link href="#" className="program-btn">More Programs</Link>
+                        <Link to="/programs" className="program-btn">More Programs</Link>
                     </div>
                 </div>
             </section>

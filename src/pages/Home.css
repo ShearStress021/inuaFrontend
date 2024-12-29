@@ -57,8 +57,8 @@ section {
 
 .hero-img img {
     /* max-width: 100%; */
-    width: 550px;
-    height: auto;
+    width: 95%;
+    /* height: auto; */
 }
 
 .hero-img:hover img {
@@ -178,8 +178,8 @@ section {
     }
 
     .hero-img img {
-        width: 500px;
-        height: auto;
+        width: 80%;
+        /* height: auto; */
     }
 
     .program-text h2 {
