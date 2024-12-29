@@ -92,12 +92,12 @@ section {
     height: auto;
 }
 
-.main-program h4 {
+.program h4 {
     font-size: 18px;
     font-weight: 500;
     color: #666;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     text-align: center;
 
 }

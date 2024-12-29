@@ -23,8 +23,9 @@ const Home = () => {
 
             </section>
             <section className="program">
+                <h4>Our Programs</h4>
                 <div className="main-program">
-                    <h4>Our Programs</h4>
+
                     <div className="program-img">
 
                         <img className="prog2" src={program} />
